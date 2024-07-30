@@ -1,35 +1,37 @@
 @import './base.css';
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+a {
+    text-decoration: none;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+ul {
+    list-style-type: none;
+    list-style-position: inside;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+ol {
+    list-style-position: inside;
 }
 
-@media (min-width: 1024px) {
-  body {
+button.loading {
     display: flex;
-    place-items: center;
-  }
+    justify-content: center;
+    align-items: center;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+button.loading img {
+    display: none;
+    width: 15px;
+    height: 15px;
+    margin-inline-start: 10px;
+}
+
+button.loading:disabled {
+    background-color: #E2E6EA !important;
+    color: #8D9BAD !important;
+    cursor: wait;
+}
+
+button.loading:disabled img {
+    display: inline-block;
 }

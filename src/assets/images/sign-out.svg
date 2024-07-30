@@ -1,0 +1,6 @@
+<svg id="sign-out" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <rect id="Rectangle_1316" data-name="Rectangle 1316" width="20" height="20" fill="none"/>
+  <path id="Path_13127" data-name="Path 13127" d="M174.011,86l3.352,3.353-3.352,3.353" transform="translate(-160.12 -79.135)" fill="none" stroke="#262626" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  <line id="Line_28" data-name="Line 28" x2="8.938" transform="translate(8.302 10.218)" fill="none" stroke="#262626" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  <path id="Path_13128" data-name="Path 13128" d="M45.109,54.05h-4.47A.639.639,0,0,1,40,53.411V40.639A.639.639,0,0,1,40.639,40h4.47" transform="translate(-36.807 -36.807)" fill="none" stroke="#262626" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+</svg>

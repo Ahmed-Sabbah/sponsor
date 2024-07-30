@@ -1,0 +1,83 @@
+.login-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-page .logo {
+    width: 147px;
+    height: 147px;
+    margin-top: 140px;
+    margin-bottom: 24px;
+}
+
+.login-page h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--main-black-color);
+    margin-bottom: 8px;
+}
+
+.login-page p {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--secondary-color);
+    margin-bottom: 40px;
+}
+
+.login-page form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-page form .input-group {
+    width: 325px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: var(--main-white-color);
+    margin-bottom: 24px;
+    padding: 13px 16px;
+    border-bottom: 1px solid var(--dark-gray-color);
+}
+
+.login-page form .input-group label {
+    margin-left: 8px;
+}
+
+.login-page form .input-group label img {
+    width: 14px;
+    height: 14px;
+}
+
+.login-page form .input-group input {
+    border: none;
+    width: 280px;
+    height: 40px;
+    outline: none;
+}
+
+.login-page form .input-group input::placeholder {
+    color: var(--dark-gray-color);
+}
+
+.login-page form button {
+    width: 325px;
+    height: 40px;
+    margin-top: 32px;
+    background-color: var(--main-green-color);
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
