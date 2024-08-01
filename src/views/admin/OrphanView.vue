@@ -38,6 +38,9 @@ onMounted(() => {
         <Loader v-if="isLoading" />
         <div class="orphan-form-data" v-else>
             <h2 class="title">بيانات استمارة اليتيم</h2>
+            <div class="btn-group">
+                <button type="button">تنزيل الاستمارة</button>
+            </div>
             <div class="orphan-details details-box">
                 <h4>بيانات اليتيم:</h4>
                 <div class="data">
@@ -73,15 +76,25 @@ onMounted(() => {
                     <p><b>رقم الجوال:</b> ---</p>
                 </div>
             </div> -->
-            <div class="orphan-sponsor details-box">
+            <div class="orphan-sponsor details-box" v-for="item in orphan.sponserings">
                 <h4>بيانات الكافل:</h4>
-                <div class="data" v-for="item in orphan.sponserings">
+                <div class="data">
                     <p><b>الاسم رباعي:</b> {{ item.sponser_name }}</p>
                     <p><b>الدولة:</b> {{ item.sponser_country }}</p>
                     <p><b>مبلغ الكفالة الشهري:</b> {{ item.amount }}</p>
                     <!-- <p><b>مدة الكفالة:</b> ---</p> -->
                     <p><b>تاريخ بداية الكفالة:</b> {{ item.first_payment_month }}</p>
                     <p><b>تاريخ نهاية الكفالة:</b> {{ item.last_payment_month }}</p>
+                </div>
+                <div class="sponsor-payments">
+                    <h5>سجل الدفعات:</h5>
+                    <div class="payments-history">
+                        <div class="item" v-for="payment in item.sponsering_payments">
+                            <p><b>المبلغ المدفوع:</b> {{ payment.amount }} <span>ريال</span></p>
+                            <p><b>تاريخ الدفعة:</b> {{ payment.payment_date }}</p>
+                            <!-- <img :src="payment.payment_photo" alt="payment_photo" width="250" height="300"> -->
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
